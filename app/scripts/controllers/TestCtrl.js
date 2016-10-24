@@ -1,12 +1,8 @@
-//This is the controller declaration for my Bloc Chat homepage
-
 (function() {
-
-  function LandingCtrl() {
-
+  function TestCtrl() {
   }
 
   angular
     .module('blocChat')
-    .controller('LandingCtrl', LandingCtrl);
+    .controller('TestCtrl', TestCtrl);
 })();
