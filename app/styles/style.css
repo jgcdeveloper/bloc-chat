@@ -1,0 +1,65 @@
+html {
+    height: 100%; /* Sets height of our HTML element to 100% of the window */
+    font-size: 100%; /* Sets font size to 100% */
+}
+
+body {
+    font-family: 'Open Sans';  /*This font was linked to using the link in the index page */
+    color: black; /* Font color will be black */
+    min-height: 100%; /* Sets body height to 100% of the window */
+    margin: 0;
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  float: left;
+  background-color: #c2d6d6;
+  top: 0;
+
+}
+
+.blocchattitle {
+    position: relative;
+    display: inline-block;
+    float:left;
+    width: 95%;
+    vertical-align: center;
+  }
+}
+.userctrl {
+  position: relative;
+  width: 5%;
+  vertical-align: center;
+}
+
+.main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.rooms {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #c2d6d6;
+  float: left;
+  padding: 15px;
+
+}
+
+.roomlisting {
+  position: relative;
+  float: left;
+  padding: 10px;
+  margin: 4px;
+  border-style: solid;
+  border-color: black;
+}
+
+#newroom {
+  margin-right: 50px;
+  background-color: white;
+}

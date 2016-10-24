@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="blocChat">
+
 <head lang="en">
+
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
+
+    <title>Bloc Chat</title>
+
+    <!-- Sets the width metadata to current device width. Inital scale of 1 (no default zoom) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Sylesheet Links to Open Sans Font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+
     <link rel="stylesheet" href="/styles/style.css">
+
 </head>
+
 <body>
+    <section class='title'>
+      <div class="blocchattitle"> <h3>"Bloc Chat"</h3> </div>
+      <div class="userctrl"> <h3> Log In </h3> </div>
+
+    </section>
+
+    <section class='main'>
+
+      <ui-view></ui-view>
+
+    <section>
+
+    <nav class='rooms'>
+      <div class="roomlisting" id="newroom"> New Room </div>
+      <div class="roomlisting" id="Room 1">Room 1</div>
+      <div class="roomlisting" id="Room 2">Room 2</div>
+      <div class="roomlisting" id="Room 3">Room 3</div>
+    </nav>
+
+
+
+    <!--Include the Minified jQuery libary.-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/scripts/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+    <!-- UI Router Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <!-- Angular App Script -->
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/LandingCtrl.js"></script>
+    <script src="/scripts/controllers/TestCtrl.js"></script>
+
+
+
 </body>
+
 </html>
