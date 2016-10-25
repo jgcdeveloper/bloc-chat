@@ -13,33 +13,22 @@
     <!-- Sylesheet Links to Open Sans Font -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
 
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/home.css">
 
 </head>
 
 <body>
     <div class = "bodycontainer">
 
-    <section class='title'>
-      <div class="blocchattitle"> <h3>"Bloc Chat"</h3> </div>
-      <div class="userctrl"> <h3> Log In </h3> </div>
-
-    </section>
-
-    <section class='main'>
+      <section class='title'>
+        <div class="blocchattitle"> <h3>"Bloc Chat"</h3> </div>
+        <div class="userctrl"> <h3> Log In </h3> </div>
+      </section>
 
       <ui-view></ui-view>
 
-    <section>
-
-    <nav class='rooms'>
-      <div class="roomlisting" id="newroom"> New Room </div>
-      <div class="roomlisting" id="Room 1">Room 1</div>
-      <div class="roomlisting" id="Room 2">Room 2</div>
-      <div class="roomlisting" id="Room 3">Room 3</div>
-    </nav>
-
-  </div>
+    </div>
 
     <!--Include the Minified jQuery libary.-->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -59,10 +48,11 @@
     <!-- UI Router Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
-    <!-- Angular App Script -->
+    <!-- Angular App Scripts -->
     <script src="/scripts/app.js"></script>
-    <script src="/scripts/controllers/LandingCtrl.js"></script>
+    <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/controllers/TestCtrl.js"></script>
+    <script scr="/scripts/services/Room.js"></script>
 
 
 

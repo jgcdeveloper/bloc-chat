@@ -29,47 +29,18 @@ body {
     position: relative;
     display: inline-block;
     float:left;
-    width: 94%;
+    width: 85%;
     vertical-align: center;
 }
 
 .userctrl {
   position: relative;
   display: inline-block;
+  width: 10%;
   margin:0;
   padding-left: 20px;
   border-left-width: 2px;
   border-left-color: white;
   border-left-style: solid;
 
-}
-
-.main {
-  position: relative;
-
-}
-
-.rooms {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #c2d6d6;
-  float: left;
-  padding: 15px;
-
-}
-
-.roomlisting {
-  position: relative;
-  float: left;
-  padding: 10px;
-  margin: 4px;
-  background-color: white;
-  border-style: solid;
-  border-color: black;
-}
-
-#newroom {
-  margin-right: 50px;
-  background-color: lightgrey;
 }
