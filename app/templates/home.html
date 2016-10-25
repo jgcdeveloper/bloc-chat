@@ -4,7 +4,5 @@
 
 <nav class='rooms'>
   <div class="roomlisting" id="newroom"> New Room </div>
-  <div class="roomlisting" id="Room 1">Room 1</div>
-  <div class="roomlisting" id="Room 2">Room 2</div>
-  <div class="roomlisting" id="Room 3">Room 3</div>
+  <div class="roomlisting" ng-repeat="room in home.rooms">{{room.$value}}</div>
 </nav>
