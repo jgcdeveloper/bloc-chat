@@ -2,7 +2,6 @@
   function ChatroomBarCtrl(Room) {
 
     this.rooms = Room.all;
-
   }
 
   angular

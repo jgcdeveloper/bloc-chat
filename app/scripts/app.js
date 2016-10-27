@@ -23,7 +23,7 @@
   //'blocChat' is the name of the module, [] is for dependancy injection.
 
   angular
-    .module('blocChat', ['firebase','ui.bootstrap','ui.router'])
+    .module('blocChat', ['firebase','ui.router', 'ui.bootstrap'])
     .config(config);
 
 })();
