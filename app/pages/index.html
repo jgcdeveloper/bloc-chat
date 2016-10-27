@@ -28,6 +28,11 @@
 
       <ui-view></ui-view>
 
+      <nav class='rooms' ng-controller="ChatroomBarCtrl as ChatroomBar">
+        <div class="roomlisting" id="newroom"> New Room </div>
+        <div class="roomlisting" ng-repeat="room in ChatroomBar.rooms">{{room.$value}}</div>
+      </nav>s
+
     </div>
 
     <!--Include the Minified jQuery libary.-->
@@ -54,8 +59,8 @@
     <script src="/scripts/services/Room.js"></script>
 
     <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/controllers/ChatroomBarCtrl.js"></script>
     <script src="/scripts/controllers/TestCtrl.js"></script>
-
 
 
 
