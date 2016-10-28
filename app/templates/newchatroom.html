@@ -3,10 +3,15 @@
 </div>
 
 <div class="newroom-body">
-  Insert List Here
+
+  <form novalidate class="simple-form">
+      New Chatroom Name: <input type="text" ng-model="NewChatroom.newRoom">
+  </form>
+
 </div>
 
-<div class="newroom-footer">
-  <button class="button button-ok" type="button" ng-click="$newroom.ok()">OK</button>
-  <button class="button button-cancel" type="button" ng-click="$newroom.cancel()">Cancel</button>
+<div class="modal-footer">
+  {{NewChatroom.newRoom}}
+  <button class="btn btn-primary" type="button" ng-click="NewChatroom.save()">Create Room</button>
+  <button class="btn btn-warning" type="button" ng-click="NewChatroom.cancel()">Cancel</button>
 </div>
