@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body ng-controller="HomeCtrl as home">
     <div class = "bodycontainer">
 
       <section class='title'>
@@ -30,11 +30,14 @@
         <div class="userctrl"> <h3> Log In </h3> </div>
       </section>
 
-      <ui-view></ui-view>
+     <section class="chatwindow">
+       <h3>{{home.currentRoom.$value}} at {{home.currentRoom.$id}}</h3>
+     </section>
+
 
       <nav class='rooms' ng-controller="ChatroomBarCtrl as ChatroomBar">
-        <button type = "button" class="btn btn-default newroom" ng-click="ChatroomBar.open()" > New Room </button>
-        <button type = "button" class="btn btn-default roombutton" ng-repeat="myRoom in ChatroomBar.myRooms">{{myRoom.$value}}</div>
+        <button type = "button" class="btn btn-default newroom" ng-click="home.open()" > New Room </button>
+        <button type = "button" class="btn btn-default roombutton" ng-click="home.setRoom(myRoom)" ng-repeat="myRoom in home.myRooms">{{myRoom.$value}}</div>
       </nav>
 
     </div>
@@ -70,6 +73,7 @@
     <script src="/scripts/app.js"></script>
 
     <script src="/scripts/services/Room.js"></script>
+    <script src="/scripts/services/Messages.js"></script>
 
     <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/controllers/ChatroomBarCtrl.js"></script>
