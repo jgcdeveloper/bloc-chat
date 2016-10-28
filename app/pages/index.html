@@ -33,8 +33,8 @@
       <ui-view></ui-view>
 
       <nav class='rooms' ng-controller="ChatroomBarCtrl as ChatroomBar">
-        <button type = "button" class="btn btn-default" ng-click="ChatroomBar.open()" > New Room </button>
-        <button type = "button" class="btn btn-default" ng-repeat="myRoom in ChatroomBar.myRooms">{{myRoom.$value}}</div>
+        <button type = "button" class="btn btn-default newroom" ng-click="ChatroomBar.open()" > New Room </button>
+        <button type = "button" class="btn btn-default roombutton" ng-repeat="myRoom in ChatroomBar.myRooms">{{myRoom.$value}}</div>
       </nav>
 
     </div>

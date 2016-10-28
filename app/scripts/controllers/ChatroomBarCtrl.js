@@ -10,16 +10,11 @@
         templateUrl: '/templates/newchatroom.html',
         controller: 'NewChatroomCtrl',
         controllerAs: 'NewChatroom',
-        resolve: {
-          newRoom: function () {
-          return $ctrl.newRoom;
-          }
-        }
+
       });
     };
-
-    $ctrl.myRooms = Room.all; //Create a Firebase room array to list during ng-repeat
-
+        $ctrl.myRooms = Room.all; //Create a Firebase room array to list during ng-repeat
+        
   }
 
   angular

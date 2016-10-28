@@ -6,23 +6,17 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #c2d6d6;
+  background-color: #009999;
   float: left;
   padding: 15px;
 }
 
-.roomlisting {
-  position: relative;
-  float: left;
-  padding: 10px;
-  margin: 4px;
-  background-color: white;
-  border-style: solid;
-  border-color: black;
-  width: 5%;
+.roombutton {
+  margin: 2px;
 }
 
-#newroom {
+.newroom {
   margin-right: 50px;
-  background-color: lightgrey;
+  font-weight: 800;
+  border-color: black;
 }
