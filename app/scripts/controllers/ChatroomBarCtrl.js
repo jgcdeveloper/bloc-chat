@@ -14,7 +14,7 @@
       });
     };
         $ctrl.myRooms = Room.all; //Create a Firebase room array to list during ng-repeat
-        
+
   }
 
   angular
