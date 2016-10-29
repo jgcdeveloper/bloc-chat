@@ -15,10 +15,8 @@
     };
 
     $ctrl.myRooms = Room.all; //Create a Firebase room array to list during ng-repeat
-
-    $ctrl.setRoom = function(name){
-      $ctrl.currentRoom = name;
-    }
+    $ctrl.messages = Messages.all;
+//    $ctrl.messages_1 = Messages.getByRoomID;
 
   }
 

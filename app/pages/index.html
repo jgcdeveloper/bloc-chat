@@ -26,24 +26,24 @@
   <div class = "bodycontainer">
 
     <section class='title'>
-      <div class="blocchattitle"> <h3>"Bloc Chat"</h3> </div>
+      <div class="blocchat-title"> <h3>"Bloc Chat"</h3> </div>
       <div class="userctrl"> <h3> Log In </h3> </div>
     </section>
 
-    <section class="chatwindow" ng-show="home.currentRoom.$value != null">
-      <h3>{{home.currentRoom.$value}} at {{home.currentRoom.$id}}</h3>
+    <section class="chat-window" ng-show="home.currentRoom.$value != null">
+      <h3 class="chat-window-title">{{home.currentRoom.$value}}</h3>
+      <p>{{home.messages}}</p>
+
     </section>
 
 
     <nav class='rooms'>
       <button type = "button" class="btn btn-default newroom" ng-click="home.open()" > New Room </button>
-      <button type = "button" class="btn btn-default roombutton" ng-click="home.setRoom(myRoom)" ng-repeat="myRoom in home.myRooms">{{myRoom.$value}}</div>
+      <button type = "button" class="btn btn-default roombutton" ng-click="home.currentRoom = myRoom" ng-repeat="myRoom in home.myRooms">{{myRoom.$value}}</div>
     </nav>
 
   </div>
 
-  <link rel="import" href="scripts.html">
-  
   <!--Include the Minified jQuery libary.-->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
