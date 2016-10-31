@@ -43,10 +43,9 @@
 
     </section>
 
-
     <nav class='rooms'>
       <button type = "button" class="btn btn-default newroom" ng-click="home.open()" > New Room </button>
-      <button type = "button" class="btn btn-default roombutton" ng-click="home.currentRoom = myRoom" ng-repeat="myRoom in home.myRooms">{{myRoom.$value}}</div>
+      <button type = "button" class="btn btn-default roombutton" ng-click="home.setCurrentRoom(myRoom)" ng-repeat="myRoom in home.myRooms">{{myRoom.$value}}</div>
     </nav>
 
   </div>
