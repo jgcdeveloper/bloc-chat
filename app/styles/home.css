@@ -20,3 +20,25 @@
   font-weight: 800;
   border-color: black;
 }
+
+.chat-window-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.messages {
+  width: 100%;
+}
+
+.messages-row .messages-username {
+  font-weight: bold;
+  width: 10%;
+}
+
+.messages-row .messages-content {
+  width: 85%;
+}
+
+.messages-row .messages-time {
+  width: 5%;
+}

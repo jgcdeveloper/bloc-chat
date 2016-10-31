@@ -32,7 +32,14 @@
 
     <section class="chat-window" ng-show="home.currentRoom.$value != null">
       <h3 class="chat-window-title">{{home.currentRoom.$value}}</h3>
-      <p>{{home.messages}}</p>
+
+      <table class ="messages">
+        <tr class= "messages-row" ng-repeat="message in home.listOfMessages">
+          <td class="messages-username"> {{message.username}}: </th>
+          <td class="messages-content"> {{message.content}} </th>
+          <td class="messages-time"> {{message.sentAt}} <th>
+        </tr>
+      </table>
 
     </section>
 

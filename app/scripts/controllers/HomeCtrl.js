@@ -3,6 +3,8 @@
 
     var $ctrl = this;
 
+
+
     $ctrl.open =  function(size, parentSelector){
 
       var modalInstance = $uibModal.open({
@@ -14,10 +16,10 @@
       });
     };
 
-    $ctrl.myRooms = Room.all; //Create a Firebase room array to list during ng-repeat
-    $ctrl.messages = Messages.all;
-//    $ctrl.messages_1 = Messages.getByRoomID;
+    $ctrl.currentRoom;
 
+    $ctrl.myRooms = Room.all; //Create a Firebase room array to list during ng-repeat
+    $ctrl.listOfMessages = Messages.getByRoomId('-KV7xCnTZWANCSWWLQoG');
   }
 
   angular

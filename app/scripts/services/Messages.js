@@ -5,10 +5,11 @@
 
     return {
       all: messages,
-      getByRoomId: function (roomId) {
-        ref.orderByChild("roomID").equalTo("-KV7xCnTZWANCSWWLQoG");
+      getByRoomId: function (chatroom){
+        return $firebaseArray(ref.orderByChild('roomID').equalTo(chatroom));
       }
-    };
+    }
+
   }
 
   angular
