@@ -1,0 +1,16 @@
+<div class="newuser-header">
+  <h3 class="newuser-title">Enter User Name</h3>
+</div>
+
+<div class="newuser-body">
+
+  <form class="simple-form">
+      Please Select Username: <input type="text" ng-model="NewUser.userName" required>
+  </form>
+
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-primary" type="button" ng-show="NewUser.userName != null" ng-click="NewUser.confirm()">Confirm Username</button>
+
+</div>
