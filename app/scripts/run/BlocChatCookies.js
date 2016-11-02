@@ -15,6 +15,8 @@
         backdrop  : 'static',
         keyboard  : false
       });
+
+      $rootScope.$digest();
     }
   }
 

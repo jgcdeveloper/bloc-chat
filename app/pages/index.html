@@ -27,7 +27,7 @@
 
     <section class='title'>
       <div class="blocchat-title"> <h3>"Bloc Chat"</h3> </div>
-      <div class="userctrl"> <h3> Username </h3> </div>
+      <div class="userctrl" ng-show='home.username != null'> <h3> {{home.username}} </h3> </div>
     </section>
 
     <section class="chat-window" ng-show="home.currentRoom.$value != null">
