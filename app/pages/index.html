@@ -26,8 +26,8 @@
   <div class = "bodycontainer">
 
     <section class='title'>
-      <div class="blocchat-title"> <h3>"Bloc Chat"</h3> </div>
-      <div class="userctrl" ng-show='home.username != null'> <h3> {{home.username}} </h3> </div>
+      <div class="blocchat-title"> <h4>"Bloc Chat"</h4> </div>
+      <div class="username" ng-show='home.username != null'> <h4> {{home.username}} </h4> </div>
     </section>
 
     <section class="chat-window" ng-show="home.currentRoom.$value != null">
@@ -41,6 +41,13 @@
         </tr>
       </table>
 
+    </section>
+
+    <section ng-show="home.currentRoom.$value != null">
+      <form class="message-input-form">
+        Message: <input class="message-input" ng-model='home.message' type='text'>
+        <input class="message-submit" type='submit' ng-click="home.newMessage(home.message,home.currentRoom.$id)" value='Send'>
+      </form>
     </section>
 
     <nav class='rooms'>
@@ -89,6 +96,7 @@
   <script src="/scripts/controllers/HomeCtrl.js"></script>
   <script src='/scripts/controllers/NewChatroomCtrl.js'></script>
   <script src='/scripts/controllers/NewUserCtrl.js'></script>
+
 
   <script src='/scripts/run/BlocChatCookies.js'></script>
 

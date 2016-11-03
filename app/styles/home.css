@@ -6,6 +6,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 75px;
   background-color: #009999;
   float: left;
   padding: 15px;
@@ -36,9 +37,28 @@
 }
 
 .messages-row .messages-content {
-  width: 85%;
+  width: 80%;
 }
 
 .messages-row .messages-time {
-  width: 5%;
+  width: 10%;
+}
+
+.message-input-form {
+  width: 100%;
+  height: 50px;
+  position:fixed;
+  bottom:75px;
+  background-color: white;
+  margin-left: 5px;
+
+}
+
+.message-input {
+  display: inline-block;
+  width: 90%;
+  color: black;
+  margin: 10px;
+  background-color: white;
+
 }

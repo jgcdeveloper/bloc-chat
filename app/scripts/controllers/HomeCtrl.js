@@ -7,6 +7,7 @@
     $ctrl.setCurrentRoom = function(room){
       $ctrl.currentRoom = room;
       $ctrl.listOfMessages = Messages.getByRoomId(room.$id);
+
     }
 
     $ctrl.open =  function(size, parentSelector){
@@ -17,6 +18,11 @@
         controllerAs: 'NewChatroom',
       });
     };
+
+    $ctrl.newMessage = function(message,currentRoom){
+      Messages.send(message,currentRoom);
+      $ctrl.message="";
+    }
 
     $ctrl.myRooms = Room.all; //Create a Firebase room array to list during ng-repeat
 

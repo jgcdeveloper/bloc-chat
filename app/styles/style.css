@@ -19,29 +19,48 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  float: left;
+  height: 50px;
   background-color: #009999;
   top: 0;
+  vertical-align: middle;
 
 }
 
 .blocchat-title {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    float:left;
-    width: 85%;
-    vertical-align: center;
+
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 30%;
+    text-align: left;
+    font-weight: bold;
 }
 
-.userctrl {
-  position: relative;
+.username {
+  position: absolute;
   display: inline-block;
+  margin: auto;
+
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  right: 0;
   width: 10%;
-  margin:0;
+  height: 30%;
+  text-align: center;
+
+
+
   padding-left: 20px;
   border-left-width: 2px;
   border-left-color: white;
   border-left-style: solid;
+  height: inherit;
 
 }
 
